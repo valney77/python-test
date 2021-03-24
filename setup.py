@@ -71,7 +71,7 @@ os.system("clear")
 
 
    #demo .format
-SIT="ola {} ,voce tem {} anos e seu peso é de {}kg \n ".format(nome,id>
+SIT="ola {} ,voce tem {} anos e seu peso é de {}kg \n ".format(nome,idade,peso)
 
 print (pink+SIT.upper())
 
@@ -108,7 +108,7 @@ print ("placar do jogo vc usou  %i chances de 5" % T)
    # rodada = rodada + 1
 
 
-#x=1,234 print('{:.2f}'.format(x))   format tem outrus usos cofira em >
+#x=1,234 print('{:.2f}'.format(x))  
 
 
 
