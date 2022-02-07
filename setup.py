@@ -49,7 +49,7 @@ magru= peso < G
 if (muitoG):
     print (red+'voce é gordo!')
 else:
-    print (white+'voce dev ser belico!')
+    print (white+'voce dev ter um bom corpo!')
 
 os.system("clear")
 
