@@ -1,7 +1,7 @@
+
+GNU nano 6.3                                                     tt.py                                                     Modified
 from random import randint
 from os import system
-
-system("clear")
 
 # cores
 red = '\033[03;31m' # Red
@@ -10,16 +10,16 @@ green = '\033[32m' # Green
 orange = '\033[05;33m' # Orange
 blue = '\033[05;34m' # blue
 pink = '\033[0;35m' # pink
+#
+b=('#')*70
 
 system("clear")
+print (orange+b+white+'\nSEJA BEM VINDO\n'+orange+b)
+
 nome=input(green+"Qual o seu nome?\n"+white)
 
-b=('#')*50
-messagem='SEJA BEM VIND0+ nome'
 
-print (orange+b+white+messagem+orange+b)
-
-idade=int(input(green+'digite sua idade:\n'+white))
+idade=int(input(green+'olá {} agora vou precisar que digite sua idade:\n'.format(nome)+white))
 
 #obj
 velh=int(50)
@@ -29,13 +29,13 @@ mode = idade == velh
 
 #condiçoes
 if (velho):
-    print (red+'voce esta meio velho!')
+    print (red+'\nvoce esta meio velho!\n')
 elif (mode):
-    print (white+'voce ta ficando velho!')
-elif (nov0):
-    print (green+'voce ainda é novo!')
+    print (white+'\nvoce ta ficando velho!\n')
+elif (novo):
+    print (green+'\nvoce ainda é novo!\n')
 
-peso=int(input(green+'digite seu peso:\n'+white))
+peso=int(input('{}{} agora digite seu peso:\n{}'.format(green,nome,white)))
 
 #obj
 G=int(85)
@@ -50,8 +50,8 @@ else:
 
 system("sleep 5s && clear")
 
-print (green+"ola {} ,voce tem {} anos e seu peso é de {}kg \n ".format(nome,idade,peso))
-print (b+'\nvamos começa o jogo de adivinhaçao\n'+b
+print (green+"\nola {} ,voce tem {} anos e seu peso é de {}kg \n ".format(nome,idade,peso))
+print (b+'\nvamos começa o jogo de adivinhaçao\n'+b)
 #obj
 N=int(randint(1,20))
 tentativas=5
