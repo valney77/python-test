@@ -1,9 +1,7 @@
 from random import randint
-import os
-import  sys
+from os import system
 
-
-os.system("clear")
+system("clear")
 
 # cores
 red = '\033[03;31m' # Red
@@ -13,58 +11,52 @@ orange = '\033[05;33m' # Orange
 blue = '\033[05;34m' # blue
 pink = '\033[0;35m' # pink
 
+system("clear")
+nome=input(green+"Qual o seu nome?\n"+white)
 
-os.system("uname -a")
-nome=input("Qual o seu nome?\n"+blue)
+b=('#')*50
+messagem='SEJA BEM VIND0+ nome'
 
-b=('★')*41
-messagem='★SEJA BEM V1ND0 '+nome+ '  4 4ul4 D PR0GR4M4Ç40★'
-print (red+b)
-print (messagem)
-print (b)
+print (orange+b+white+messagem+orange+b)
 
-idade=int(input(green+'digite sua idade:\n'+blue))
+idade=int(input(green+'digite sua idade:\n'+white))
 
-velho='40'
-velh=int(velho)
-
-
-velh0= idade > velh
-nov0= idade < velh
+#obj
+velh=int(50)
+velho= idade > velh
+novo= idade < velh
 mode = idade == velh
 
-
-if (velh0):
+#condiçoes
+if (velho):
     print (red+'voce esta meio velho!')
 elif (mode):
-    print (white+'voce esta na idade padrao!')
+    print (white+'voce ta ficando velho!')
 elif (nov0):
-    print (blue+'voce ainda é novo!')
-peso=int(input(green+'digite seu peso:\n'+blue))
-gordo='90'
-G=int(gordo)
+    print (green+'voce ainda é novo!')
+
+peso=int(input(green+'digite seu peso:\n'+white))
+
+#obj
+G=int(85)
 muitoG= peso >= G
 magru= peso < G
 
+#condiçoes
 if (muitoG):
     print (red+'voce é gordo!')
 else:
-    print (white+'voce dev ser belico!')
+    print (white+'voce deve ser padrao!')
 
-os.system("clear")
+system("sleep 5s && clear")
 
-SIT="ola {} ,voce tem {} anos e seu peso é de {}kg \n ".format(nome,idade,peso)
-
-print (pink+SIT.upper())
+print (green+"ola {} ,voce tem {} anos e seu peso é de {}kg \n ".format(nome,idade,peso))
+print (b+'\nvamos começa o jogo de adivinhaçao\n'+b
+#obj
 N=int(randint(1,20))
 tentativas=5
 rodada = 0
 T=0
-
-
-#while (rodada <= tentativas):
-
-
 
 for rodada in range(1,tentativas + 1):
 
@@ -84,19 +76,3 @@ for rodada in range(1,tentativas + 1):
 
 print ("FIM DE JOG0")
 print ("placar do jogo vc usou  %i chances de 5" % T)
-
-   # rodada = rodada + 1
-
-
-#x=1,234 print('{:.2f}'.format(x))  
-
-
-
-#zona d test
-TEST='ZRR'
-TEST.upper()#retorna caracteres maíusculo
-TEST.capitalize()#retorna caractereres minú
-
-   #estes valores func fora de parenteses
-bool(2==2) #valores booleano
-bool(3>2)#verdadeiro
