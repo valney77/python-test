@@ -1,5 +1,3 @@
-
-GNU nano 6.3                                                     tt.py                                                     Modified
 from random import randint
 from os import system
 
